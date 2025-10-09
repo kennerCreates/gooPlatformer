@@ -1,6 +1,6 @@
 using Godot;
 
-namespace gooPlatformer;
+namespace gooPlatformer.Scripts.Player;
 
 public partial class Player : CharacterBody2D
 {
