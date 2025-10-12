@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=4 uid="uid://r1cbpcemjc45"]
 
 [ext_resource type="Script" uid="uid://be8dr0qtc56a4" path="res://Scripts/Player/Player.cs" id="1_qw60f"]
-[ext_resource type="Script" uid="uid://cc3wtw48rvvc5" path="res://RootAnimation.cs" id="3_28aoi"]
+[ext_resource type="Script" uid="uid://doeagjylijfvi" path="res://Scripts/ProceduralAnimation.cs" id="3_28aoi"]
 [ext_resource type="Texture2D" uid="uid://dh5d74cdcqtb7" path="res://Assets/Sprites/circle.png" id="4_jnlp7"]
 [ext_resource type="Texture2D" uid="uid://csu426ntiuea0" path="res://Assets/TileSets/tileset.png" id="12_qw60f"]
 
@@ -128,6 +128,7 @@ tile_map_data = PackedByteArray("AAD+/wIAAQABAAEAAAD//wIAAQABAAEAAAAAAAEAAQABAAE
 tile_set = SubResource("TileSet_qwhpj")
 
 [node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(0, -69)
 motion_mode = 1
 script = ExtResource("1_qw60f")
 
@@ -139,8 +140,8 @@ shape = SubResource("CapsuleShape2D_l8v81")
 offset = Vector2(50, -50)
 position_smoothing_enabled = true
 
-[node name="RootAnimation" type="Node2D" parent="Player"]
+[node name="ProceduralAnimation" type="Node2D" parent="Player"]
 script = ExtResource("3_28aoi")
 
-[node name="Sprite2D" type="Sprite2D" parent="Player/RootAnimation"]
+[node name="Sprite2D" type="Sprite2D" parent="Player/ProceduralAnimation"]
 texture = ExtResource("4_jnlp7")
