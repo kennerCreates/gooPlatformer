@@ -1,6 +1,8 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gooPlatformer", "gooPlatformer.csproj", "{F3391497-EB85-4CC6-B1AD-37A85275A12C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gooPlatformer", "gooPlatformer\gooPlatformer.csproj", "{F3391497-EB85-4CC6-B1AD-37A85275A12C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gooPlatformer.Tests", "gooPlatformer.Tests\gooPlatformer.Tests.csproj", "{0A9596CB-98AA-4CC6-AB8D-A97D958D6B7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,5 +17,11 @@ Global
 		{F3391497-EB85-4CC6-B1AD-37A85275A12C}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
 		{F3391497-EB85-4CC6-B1AD-37A85275A12C}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
 		{F3391497-EB85-4CC6-B1AD-37A85275A12C}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{0A9596CB-98AA-4CC6-AB8D-A97D958D6B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9596CB-98AA-4CC6-AB8D-A97D958D6B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9596CB-98AA-4CC6-AB8D-A97D958D6B7A}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9596CB-98AA-4CC6-AB8D-A97D958D6B7A}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9596CB-98AA-4CC6-AB8D-A97D958D6B7A}.ExportRelease|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9596CB-98AA-4CC6-AB8D-A97D958D6B7A}.ExportRelease|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
