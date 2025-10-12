@@ -6,4 +6,7 @@ public class MovementInputOptions
     public float RightInput { get; init; }
     public float DownInput { get; init; }
     public float UpInput { get; init; }
+    public float Speed { get; init; }
+    public float Acceleration { get; init; }
+    public float Deceleration { get; init; }
 }

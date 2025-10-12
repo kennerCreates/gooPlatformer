@@ -5,7 +5,8 @@ namespace gooPlatformer.Scripts.Player;
 
 public static class MovementInputUtils
 {
-    public static bool IssNonZeroInput(MovementInputOptions options) =>
+    public static Vector2 TargetVelocity(MovementInputOptions options) => NormalizedInputVector(options) * options.Speed;
+    public static bool IsNonZeroInput(MovementInputOptions options) =>
         NormalizedInputVector(options) != Vector2.Zero;
     public static Vector2 NormalizedInputVector(MovementInputOptions options) =>
         new Vector2(XInput(options), YInput(options)).Normalized();
