@@ -9,10 +9,6 @@ public partial class Player : CharacterBody2D
 	{
 		MouseInput = GetGlobalMousePosition(),
 		PlayerLocation = GetGlobalPosition(),
-		LeftInput = Input.GetActionStrength("left"),
-		RightInput = Input.GetActionStrength("right"),
-		DownInput = Input.GetActionStrength("down"),
-		UpInput = Input.GetActionStrength("up"),
 		Speed = 300.0f,
 		Acceleration = 500.0f,
 	};

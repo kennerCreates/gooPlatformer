@@ -13,6 +13,4 @@ public class MovementInputUtils
     public static Vector2 NormalizedInputVector(MovementInputOptions options) =>
         MovementDirectionVector(options).Normalized();
     public static Vector2 MovementDirectionVector(MovementInputOptions options) => options.MouseInput - options.PlayerLocation;
-    public static float XInput(MovementInputOptions options) => options.RightInput - options.LeftInput;
-    public static float YInput(MovementInputOptions options) => options.DownInput - options.UpInput;
 }

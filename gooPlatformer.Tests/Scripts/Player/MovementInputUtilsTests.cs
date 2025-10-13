@@ -6,53 +6,29 @@ namespace gooPlatformer.Tests.Scripts.Player;
 
 public class MovementInputUtilsTests
 {
-    [Theory]
-    [InlineData(0.2f, 0.5f, -0.3f)]
-    [InlineData(0.0f, 0.0f, 0.00f)]
-    public void XInput(float rightInput, float leftInput, float expected)
+    [Fact]
+    public void MovementDirectionVector()
     {
         var options = new MovementInputOptions
         {
-            RightInput = rightInput,
-            LeftInput = leftInput,
-            DownInput = 0.2f,
-            UpInput = 0.1f
+            MouseInput = new Vector2(37f, 100f),
+            PlayerLocation = new Vector2(-22f, 23f)
         };
+        var expected = new Vector2(59f, 77f);
         
-        var actual = MovementInputUtils.XInput(options);
+        var actual = MovementInputUtils.MovementDirectionVector(options);
         
-        Assert.Equal(expected, actual, 4);
+        Assert.Equal(expected, actual);
     }
-    
-    [Theory]
-    [InlineData(0.2f, 0.5f, -0.3f)]
-    [InlineData(0.0f, 0.0f, 0.00f)]
-    public void YInput(float downInput, float upInput, float expected)
-    {
-        var options = new MovementInputOptions
-        {
-            RightInput = 0.5f,
-            LeftInput = 0.2f,
-            DownInput = downInput,
-            UpInput = upInput
-        };
-        
-        var actual = MovementInputUtils.YInput(options);
-        
-        Assert.Equal(expected, actual, 4);
-    }
-
     [Fact]
     public void NormalizedInputVector()
     {
         var options = new MovementInputOptions
         {
-            RightInput = 0.5f,
-            LeftInput = 0.2f,
-            DownInput = 0.2f,
-            UpInput = 0.1f
+            MouseInput = new Vector2(-50f, 100f),
+            PlayerLocation = new Vector2(1f, 4.5f)
         };
-        var inputVector = new Vector2(0.3f, 0.1f);
+        var inputVector = options.MouseInput - options.PlayerLocation;
         var expected = inputVector.Normalized();
         
         var actual = MovementInputUtils.NormalizedInputVector(options);
@@ -61,14 +37,12 @@ public class MovementInputUtilsTests
     }
 
     [Fact]
-    public void IsNonZeroInput_MultiInput_True()
+    public void IsNonZeroInput_True()
     {
         var options = new MovementInputOptions
         {
-            RightInput = 0.5f,
-            LeftInput = 0.2f,
-            DownInput = 0.2f,
-            UpInput = 0.1f
+            MouseInput = new Vector2(37f, 100f),
+            PlayerLocation = new Vector2(-22f, 23f)
         };
         
         var actual = MovementInputUtils.IsNonZeroInput(options);
@@ -76,31 +50,14 @@ public class MovementInputUtilsTests
         Assert.True(actual);
     }
     
-    [Fact]
-    public void IsNonZeroInput_SingleInput_True()
-    {
-        var options = new MovementInputOptions
-        {
-            RightInput = 0.5f,
-            LeftInput = 0f,
-            DownInput = 0f,
-            UpInput = 0f
-        };
-        
-        var actual = MovementInputUtils.IsNonZeroInput(options);
-        
-        Assert.True(actual);
-    }
     
     [Fact]
     public void IsNonZeroInput_False()
     {
         var options = new MovementInputOptions
         {
-            RightInput = 0f,
-            LeftInput = 0f,
-            DownInput = 0f,
-            UpInput = 0f
+            MouseInput = new Vector2(37f, 23f),
+            PlayerLocation = new Vector2(37f, 23f)
         };
         
         var actual = MovementInputUtils.IsNonZeroInput(options);
@@ -113,13 +70,11 @@ public class MovementInputUtilsTests
     {
         var options = new MovementInputOptions
         {
-            RightInput = 0.5f,
-            LeftInput = 0.2f,
-            DownInput = 0.2f,
-            UpInput = 0.1f,
+            MouseInput = new Vector2(37f, 100f),
+            PlayerLocation = new Vector2(-22f, 23f),
             Speed = 300f
         };
-        var inputVector = new Vector2(0.3f, 0.1f);
+        var inputVector = options.MouseInput - options.PlayerLocation;
         var expected = inputVector.Normalized() * 300f;
         
         var actual = MovementInputUtils.TargetVelocity(options);
@@ -132,15 +87,14 @@ public class MovementInputUtilsTests
     {
         var options = new MovementInputOptions
         {
-            RightInput = 1.3f,
-            LeftInput = 0f,
-            DownInput = 0f,
-            UpInput = 0f,
+            MouseInput = new Vector2(37f, 100f),
+            PlayerLocation = new Vector2(-22f, 23f),
             Speed = 300f,
             Acceleration = 1000f
         };
-        var velocity = new Vector2(100f, 100f);
-        var expected = new Vector2(189.44272f, 55.27864f);
+        var inputVector = options.MouseInput - options.PlayerLocation;
+        var velocity = inputVector.Normalized() * options.Speed;
+        var expected = new Vector2(182.46452f, 238.13167f);
         
         var actual = MovementInputUtils.VelocityForTick(velocity, .1f, options);
         
