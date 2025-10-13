@@ -1,7 +1,11 @@
-﻿namespace gooPlatformer.Configuration;
+﻿using Godot;
+
+namespace gooPlatformer.Configuration;
 
 public class MovementInputOptions
 {
+    public Vector2 MouseInput { get; init; }
+    public Vector2 PlayerLocation { get; init; }
     public float LeftInput { get; init; }
     public float RightInput { get; init; }
     public float DownInput { get; init; }

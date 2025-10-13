@@ -5,8 +5,10 @@ namespace gooPlatformer.Scripts.Player;
 
 public partial class Player : CharacterBody2D
 {
-	private static MovementInputOptions InputOptions => new()
+	private MovementInputOptions InputOptions => new()
 	{
+		MouseInput = GetGlobalMousePosition(),
+		PlayerLocation = GetGlobalPosition(),
 		LeftInput = Input.GetActionStrength("left"),
 		RightInput = Input.GetActionStrength("right"),
 		DownInput = Input.GetActionStrength("down"),
