@@ -1,0 +1,27 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gooPlatformer", "gooPlatformer.csproj", "{CE64C861-1837-4C2B-84FF-F3C4742A1115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gooPlatformer.Tests", "..\gooPlatformer.Tests\gooPlatformer.Tests.csproj", "{B96F3503-4E1A-4CBE-8A88-AADB38C26AEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE64C861-1837-4C2B-84FF-F3C4742A1115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE64C861-1837-4C2B-84FF-F3C4742A1115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE64C861-1837-4C2B-84FF-F3C4742A1115}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{CE64C861-1837-4C2B-84FF-F3C4742A1115}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{CE64C861-1837-4C2B-84FF-F3C4742A1115}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{CE64C861-1837-4C2B-84FF-F3C4742A1115}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{B96F3503-4E1A-4CBE-8A88-AADB38C26AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96F3503-4E1A-4CBE-8A88-AADB38C26AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96F3503-4E1A-4CBE-8A88-AADB38C26AEA}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96F3503-4E1A-4CBE-8A88-AADB38C26AEA}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+		{B96F3503-4E1A-4CBE-8A88-AADB38C26AEA}.ExportRelease|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96F3503-4E1A-4CBE-8A88-AADB38C26AEA}.ExportRelease|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
