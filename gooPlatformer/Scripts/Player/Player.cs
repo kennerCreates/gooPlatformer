@@ -22,6 +22,7 @@ public partial class Player : CharacterBody2D
 	private void OnTick(float dt)
 	{
 		Velocity = MovementInputUtils.VelocityForTick(Velocity, dt, InputOptions);
+		LookAt(InputOptions.MouseInput);
 		MoveAndSlide();
 	}
 }
