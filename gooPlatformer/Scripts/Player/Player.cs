@@ -5,7 +5,7 @@ namespace gooPlatformer.Scripts.Player;
 
 public partial class Player : CharacterBody2D
 {
-	private MovementInputOptions _inputOptions = new()
+	private static MovementInputOptions InputOptions => new()
 	{
 		LeftInput = Input.GetActionStrength("left"),
 		RightInput = Input.GetActionStrength("right"),
@@ -13,16 +13,17 @@ public partial class Player : CharacterBody2D
 		UpInput = Input.GetActionStrength("up"),
 		Speed = 300.0f,
 		Acceleration = 500.0f,
-		Deceleration = 1200.0f
 	};
 
 	public override void _PhysicsProcess(double delta)
 	{
-		OnTick(delta);
+		var dt = (float)delta;
+		OnTick(dt);
 	}
 
-	private void OnTick(double delta)
+	private void OnTick(float dt)
 	{
-		
+		Velocity = MovementInputUtils.VelocityForTick(Velocity, dt, InputOptions);
+		MoveAndSlide();
 	}
 }

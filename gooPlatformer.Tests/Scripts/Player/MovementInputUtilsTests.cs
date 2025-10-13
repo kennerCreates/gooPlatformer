@@ -126,4 +126,24 @@ public class MovementInputUtilsTests
         
         Assert.Equal(expected, actual);
     }
+    
+    [Fact]
+    public void VelocityForTick()
+    {
+        var options = new MovementInputOptions
+        {
+            RightInput = 1.3f,
+            LeftInput = 0f,
+            DownInput = 0f,
+            UpInput = 0f,
+            Speed = 300f,
+            Acceleration = 1000f
+        };
+        var velocity = new Vector2(100f, 100f);
+        var expected = new Vector2(189.44272f, 55.27864f);
+        
+        var actual = MovementInputUtils.VelocityForTick(velocity, .1f, options);
+        
+        Assert.Equal(expected, actual);
+    }
 }
