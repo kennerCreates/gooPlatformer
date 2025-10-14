@@ -24,6 +24,7 @@ public partial class Player : CharacterBody2D
 	{
 		Velocity = MovementInputUtils.VelocityForTick(Velocity, dt, InputOptions);
 		LookAt(InputOptions.MouseInput);
+		//Rotation = MovementInputUtils.InterpolatedLookAtLocation(InputOptions, dt);
 		MoveAndSlide();
 	}
 }
