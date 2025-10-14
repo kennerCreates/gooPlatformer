@@ -1,3 +1,4 @@
 res://Scripts/Animation/ProceduralAnimation.cs
 res://Scripts/Player/Player.cs
 res://root.tscn
+res://Scripts/Animation/Joint.cs

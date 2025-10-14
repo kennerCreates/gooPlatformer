@@ -129,6 +129,38 @@ tile_set = SubResource("TileSet_qwhpj")
 tile_map_data = PackedByteArray("AAD+/wIAAQABAAEAAAD//wIAAQABAAEAAAAAAAEAAQABAAEAAAAAAAIAAQABAAEAAAABAAEAAQABAAAAAAABAAIAAQABAAEAAAACAAEAAQABAAAAAAACAAIAAQABAAEAAAD9/wIAAQABAAEAAAADAAEAAQABAAAAAAADAAIAAQABAAEAAAAEAAEAAQABAAAAAAAEAAIAAQABAAEAAAAFAAEAAQABAAAAAAAFAAIAAQABAAEAAAAGAAEAAQACAAEAAAAGAAIAAQACAAEAAAAPAAEAAQABAAAAAAAPAAIAAQABAAEAAAAQAAEAAQABAAAAAAAQAAIAAQABAAEAAAARAAEAAQACAAAAAAARAAIAAQACAAEAAAD8/wIAAQABAAEAAAD7/wIAAQABAAEAAAD6/wEAAQABAAAAAAD6/wIAAQABAAEAAAD5/wEAAQABAAAAAAD5/wIAAQABAAEAAAD4/wEAAQABAAAAAAD4/wIAAQABAAEAAAARAP7/AQAAAAMAAAARAP//AQAAAAQAAAARAAAAAQAAAAUAAAARAPv/AQAAAAMAAAARAPz/AQAAAAQAAAARAP3/AQAAAAUAAAARAPj/AQAAAAMAAAARAPn/AQAAAAQAAAARAPr/AQAAAAUAAAAPAPn/AQAFAAIAAAAQAPn/AQAEAAIAAAAKAPz/AQAFAAQAAAAJAPz/AQAEAAQAAAAIAPz/AQAFAAQAAAAHAPz/AQAEAAQAAAAGAPz/AQAFAAQAAAAFAPz/AQAEAAQAAAAEAPz/AQAFAAQAAAAOAPn/AQAEAAIAAAD6//n/AQAAAAEAAAD7//n/AQABAAMAAAD8//n/AQABAAMAAAD9//n/AQACAAEAAAD4/wMAAQABAAEAAAD5/wMAAQABAAEAAAD6/wMAAQABAAEAAAD7/wMAAQABAAEAAAD8/wMAAQABAAEAAAD9/wMAAQABAAEAAAD+/wMAAQABAAEAAAD//wMAAQABAAEAAAAAAAMAAQABAAEAAAABAAMAAQABAAEAAAACAAMAAQABAAEAAAADAAMAAQABAAEAAAAEAAMAAQABAAEAAAAFAAMAAQABAAEAAAAGAAMAAQABAAEAAAAHAAMAAQABAAEAAAAIAAMAAQABAAEAAAAJAAMAAQABAAEAAAAKAAMAAQABAAEAAAALAAMAAQABAAEAAAAMAAMAAQABAAEAAAANAAMAAQABAAEAAAAOAAMAAQABAAEAAAAPAAMAAQABAAEAAAAQAAMAAQABAAEAAAARAAMAAQACAAEAAAAQAAQAAQABAAEAAAARAAQAAQACAAIAAAAPAAQAAQAAAAIAAAAQAAUAAQAEAAcAAAAMAAQAAQABAAIAAAAOAAQAAQACAAIAAAANAAQAAQABAAEAAAALAAQAAQABAAEAAAD4/wQAAQABAAMAAAD5/wQAAQABAAMAAAD6/wQAAQABAAMAAAD7/wQAAQABAAMAAAD8/wQAAQABAAMAAAD9/wQAAQABAAMAAAD+/wQAAQAFAAMAAAD//wQAAQABAAMAAAAAAAQAAQAFAAQAAAABAAQAAQABAAMAAAACAAQAAQAFAAQAAAADAAQAAQAFAAQAAAAEAAQAAQAFAAQAAAAFAAQAAQAFAAQAAAAGAAQAAQAFAAQAAAAHAAQAAQAFAAQAAAAIAAQAAQAFAAQAAAAJAAQAAQAFAAQAAAAKAAQAAQAFAAQAAAANAAUAAQAEAAcAAAANAAYAAQAFAAcAAAANAAcAAQAFAAcAAAAQAAYAAQAFAAcAAAAQAAcAAQAFAAcAAAD4/wgAAQAFAAkAAAD5/wgAAQAFAAkAAAD6/wgAAQAFAAkAAAD7/wgAAQAFAAkAAAD8/wgAAQAFAAkAAAD9/wgAAQAFAAkAAAD+/wgAAQAFAAkAAAD//wgAAQAFAAkAAAAAAAgAAQAFAAkAAAABAAgAAQAFAAkAAAACAAgAAQAFAAkAAAADAAgAAQAFAAkAAAAEAAgAAQAFAAkAAAAFAAgAAQAFAAkAAAAGAAgAAQAFAAkAAAAHAAgAAQAFAAkAAAAIAAgAAQAFAAkAAAAJAAgAAQAFAAkAAAAKAAgAAQAFAAkAAAALAAgAAQAFAAkAAAAMAAgAAQAFAAkAAAANAAgAAQAFAAkAAAAOAAgAAQAFAAkAAAAPAAgAAQAFAAkAAAAQAAgAAQAFAAkAAAARAAgAAQAFAAkAAAAEAAUAAQACAAkAAAABAAUAAQACAAkAAAABAAYAAQABAAYAAAABAAcAAQABAAYAAAAEAAYAAQABAAYAAAAEAAcAAQABAAYAAAD4/wUAAQADAAgAAAD5/wUAAQADAAgAAAD+/wUAAQADAAgAAAD//wUAAQADAAgAAAD9/wUAAQADAAgAAAADAAUAAQADAAgAAAACAAUAAQADAAgAAAAGAAUAAQADAAgAAAAHAAUAAQADAAgAAAAKAAUAAQADAAgAAAALAAUAAQADAAgAAAARAPf/AQAAAAQAAAARAPb/AQAAAAQAAAARAPX/AQAAAAQAAAARAPT/AQAAAAQAAAARAPP/AQAAAAQAAAARAPL/AQAAAAQAAAAHAAIAAQACAAYAAAAIAAIAAQACAAYAAAAJAAIAAQACAAYAAAALAAIAAQACAAYAAAAKAAIAAQACAAYAAAANAAIAAQACAAYAAAAMAAIAAQACAAYAAAAOAAEAAQAAAAEAAAAOAAIAAQAAAAEAAAD7/wEAAQABAAEAAAD//wEAAQABAAEAAAD+/wEAAQABAAEAAAD9/wEAAQABAAEAAAD8/wEAAQABAAEAAADq//L/AQAAAAQAAADq//P/AQAAAAQAAADq//T/AQAAAAQAAADq//X/AQAAAAQAAADq//b/AQAAAAQAAADq//f/AQAAAAQAAADq//j/AQAAAAMAAADq//n/AQAAAAQAAADq//r/AQAAAAUAAADq//v/AQAAAAMAAADq//z/AQAAAAQAAADq//3/AQAAAAUAAADq//7/AQAAAAMAAADq////AQAAAAQAAADq/wAAAQAAAAUAAADq/wEAAQAAAAAAAADq/wIAAQAAAAEAAADq/wMAAQAAAAEAAADq/wQAAQAAAAIAAADq/wgAAQAFAAkAAADr//r/AQACAAMAAADr/wEAAQABAAAAAADr/wIAAQABAAEAAADr/wMAAQABAAEAAADr/wQAAQABAAEAAADr/wUAAQAEAAcAAADr/wYAAQAFAAcAAADr/wcAAQAFAAcAAADr/wgAAQAFAAkAAADs/wEAAQABAAAAAADs/wIAAQABAAEAAADs/wMAAQABAAEAAADs/wQAAQACAAIAAADs/wgAAQAFAAkAAADt/wEAAQABAAAAAADt/wIAAQABAAEAAADt/wMAAQABAAEAAADt/wQAAQAAAAIAAADt/wgAAQAFAAkAAADu//7/AQAAAAMAAADu/wEAAQABAAAAAADu/wIAAQABAAEAAADu/wMAAQABAAEAAADu/wQAAQABAAEAAADu/wUAAQAEAAcAAADu/wYAAQAFAAcAAADu/wcAAQAFAAcAAADu/wgAAQAFAAkAAADv//7/AQABAAMAAADv/wEAAQABAAAAAADv/wIAAQABAAEAAADv/wMAAQABAAEAAADv/wQAAQABAAIAAADv/wgAAQAFAAkAAADw//7/AQACAAMAAADw/wEAAQABAAAAAADw/wIAAQABAAEAAADw/wMAAQABAAEAAADw/wQAAQAFAAMAAADw/wUAAQACAAkAAADw/wYAAQABAAYAAADw/wcAAQABAAYAAADw/wgAAQAFAAkAAADx/wEAAQABAAEAAADy/wEAAQABAAEAAADy/wIAAQABAAEAAADz/wIAAQABAAEAAAD0/wIAAQABAAEAAAD1/wIAAQABAAEAAAD2/wIAAQABAAEAAAD3/wEAAQABAAEAAAD2/wEAAQABAAEAAAD1/wEAAQABAAEAAAD0/wEAAQABAAEAAADz/wEAAQABAAEAAADx/wIAAQABAAEAAADx/wMAAQABAAEAAADy/wMAAQABAAEAAADz/wMAAQABAAEAAAD0/wMAAQABAAEAAAD1/wMAAQABAAEAAAD2/wMAAQABAAEAAAD3/wMAAQABAAEAAAD3/wIAAQABAAEAAAD3/wQAAQABAAMAAAD2/wQAAQAFAAMAAAD1/wQAAQABAAMAAAD0/wQAAQAFAAMAAADz/wQAAQAFAAMAAADy/wQAAQABAAMAAADx/wQAAQABAAMAAADx/wgAAQAFAAkAAADy/wgAAQAFAAkAAADz/wgAAQAFAAkAAAD0/wgAAQAFAAkAAAD1/wgAAQAFAAkAAAD2/wgAAQAFAAkAAAD3/wgAAQAFAAkAAAA=")
 tile_set = SubResource("TileSet_qwhpj")
 
+[node name="Body" type="Node2D" parent="."]
+position = Vector2(-20, -69)
+script = ExtResource("3_28aoi")
+_attachedNode = NodePath("../Player")
+
+[node name="Sprite2D" type="Sprite2D" parent="Body"]
+texture = ExtResource("4_jnlp7")
+
+[node name="Joint1" type="Node2D" parent="Body"]
+position = Vector2(-20, 0)
+script = ExtResource("3_28aoi")
+_attachedNode = NodePath("..")
+
+[node name="Sprite2D" type="Sprite2D" parent="Body/Joint1"]
+texture = ExtResource("4_jnlp7")
+
+[node name="Joint2" type="Node2D" parent="Body/Joint1"]
+position = Vector2(-20, 0)
+script = ExtResource("3_28aoi")
+_attachedNode = NodePath("..")
+
+[node name="Sprite2D" type="Sprite2D" parent="Body/Joint1/Joint2"]
+texture = ExtResource("4_jnlp7")
+
+[node name="Joint3" type="Node2D" parent="Body/Joint1/Joint2"]
+position = Vector2(-20, 0)
+script = ExtResource("3_28aoi")
+_attachedNode = NodePath("..")
+
+[node name="Sprite2D" type="Sprite2D" parent="Body/Joint1/Joint2/Joint3"]
+texture = ExtResource("4_jnlp7")
+
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(0, -69)
 motion_mode = 1
@@ -142,71 +174,68 @@ shape = SubResource("CapsuleShape2D_l8v81")
 offset = Vector2(50, -50)
 position_smoothing_enabled = true
 
-[node name="ProceduralAnimation" type="Node2D" parent="Player"]
-script = ExtResource("3_28aoi")
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Player/ProceduralAnimation"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/ProceduralAnimation/RigidBody2D"]
-shape = SubResource("CircleShape2D_28aoi")
-
-[node name="PinJoint2D" type="PinJoint2D" parent="Player/ProceduralAnimation/RigidBody2D"]
-node_a = NodePath("../../..")
-node_b = NodePath("..")
-softness = 0.2
-angular_limit_lower = -0.5235988
-angular_limit_upper = 0.5235988
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Player/ProceduralAnimation/RigidBody2D"]
-position = Vector2(-20, 0)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D"]
-shape = SubResource("CircleShape2D_28aoi")
-
-[node name="Sprite2D" type="Sprite2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D"]
-texture = ExtResource("4_jnlp7")
-
-[node name="PinJoint2D" type="PinJoint2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D"]
-position = Vector2(20, 0)
-node_a = NodePath("../..")
-node_b = NodePath("..")
-softness = 0.2
-angular_limit_lower = -0.5235988
-angular_limit_upper = 0.5235988
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D"]
-position = Vector2(-20, 0)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D"]
-shape = SubResource("CircleShape2D_28aoi")
-
-[node name="Sprite2D" type="Sprite2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D"]
-texture = ExtResource("4_jnlp7")
-
-[node name="PinJoint2D" type="PinJoint2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D"]
-position = Vector2(20, 0)
-node_a = NodePath("../..")
-node_b = NodePath("..")
-softness = 0.2
-angular_limit_lower = -0.5235988
-angular_limit_upper = 0.5235988
-
-[node name="RigidBody2D" type="RigidBody2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D"]
-position = Vector2(-20, 0)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D/RigidBody2D"]
-shape = SubResource("CircleShape2D_28aoi")
-
-[node name="Sprite2D" type="Sprite2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D/RigidBody2D"]
-texture = ExtResource("4_jnlp7")
-
-[node name="PinJoint2D" type="PinJoint2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D/RigidBody2D"]
-position = Vector2(20, 0)
-node_a = NodePath("../..")
-node_b = NodePath("..")
-softness = 0.2
-angular_limit_lower = -0.5235988
-angular_limit_upper = 0.5235988
-
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 texture = ExtResource("4_jnlp7")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/RigidBody2D"]
+shape = SubResource("CircleShape2D_28aoi")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Player/RigidBody2D"]
+node_a = NodePath("../..")
+node_b = NodePath("..")
+softness = 0.2
+angular_limit_lower = -0.5235988
+angular_limit_upper = 0.5235988
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Player/RigidBody2D"]
+position = Vector2(-20, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/RigidBody2D/RigidBody2D"]
+shape = SubResource("CircleShape2D_28aoi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/RigidBody2D/RigidBody2D"]
+texture = ExtResource("4_jnlp7")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Player/RigidBody2D/RigidBody2D"]
+position = Vector2(20, 0)
+node_a = NodePath("../..")
+node_b = NodePath("..")
+softness = 0.2
+angular_limit_lower = -0.5235988
+angular_limit_upper = 0.5235988
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Player/RigidBody2D/RigidBody2D"]
+position = Vector2(-20, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/RigidBody2D/RigidBody2D/RigidBody2D"]
+shape = SubResource("CircleShape2D_28aoi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/RigidBody2D/RigidBody2D/RigidBody2D"]
+texture = ExtResource("4_jnlp7")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Player/RigidBody2D/RigidBody2D/RigidBody2D"]
+position = Vector2(20, 0)
+node_a = NodePath("../..")
+node_b = NodePath("..")
+softness = 0.2
+angular_limit_lower = -0.5235988
+angular_limit_upper = 0.5235988
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Player/RigidBody2D/RigidBody2D/RigidBody2D"]
+position = Vector2(-20, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/RigidBody2D/RigidBody2D/RigidBody2D/RigidBody2D"]
+shape = SubResource("CircleShape2D_28aoi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/RigidBody2D/RigidBody2D/RigidBody2D/RigidBody2D"]
+texture = ExtResource("4_jnlp7")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Player/RigidBody2D/RigidBody2D/RigidBody2D/RigidBody2D"]
+position = Vector2(20, 0)
+node_a = NodePath("../..")
+node_b = NodePath("..")
+softness = 0.2
+angular_limit_lower = -0.5235988
+angular_limit_upper = 0.5235988
