@@ -1,10 +1,15 @@
-﻿using gooPlatformer.Configuration;
+﻿using Godot;
+using gooPlatformer.Configuration;
 using Vector2 = Godot.Vector2;
 
 namespace gooPlatformer.Scripts.Player;
 
 public static class MovementInputUtils
 {
+    public static float InterpolatedLookAtLocation(MovementInputOptions options, float dt) => Mathf.Wrap(CurrentPlayerAngle(options) + CalculateShortestAngle(options) * dt * options.RotationSpeed, -Mathf.Pi, Mathf.Pi);
+    public static float CalculateShortestAngle(MovementInputOptions options) => Mathf.AngleDifference(CurrentPlayerAngle(options), TargetAngle(options));
+    public static float TargetAngle(MovementInputOptions options) => options.MouseInput.Angle();
+    public static float CurrentPlayerAngle(MovementInputOptions options) => options.PlayerLocation.Angle();
     public static Vector2 VelocityForTick(Vector2 velocity, float dt, MovementInputOptions options) =>
         velocity.MoveToward(TargetVelocity(options), options.Acceleration * dt);
     public static Vector2 TargetVelocity(MovementInputOptions options) => NormalizedInputVector(options) * options.Speed;

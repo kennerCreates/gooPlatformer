@@ -1,5 +1,7 @@
 ﻿using Godot;
 using gooPlatformer.GodotInterface.Models;
+using Node = Godot.Node;
+using Node2D = Godot.Node2D;
 
 namespace gooPlatformer.GodotInterface;
 
@@ -29,5 +31,6 @@ public static class GodotUtils
         
         return godotRigidBody;
     }
-    
+
+    public static Node2D ToGodotNode2D(this Node node) => new();
 }

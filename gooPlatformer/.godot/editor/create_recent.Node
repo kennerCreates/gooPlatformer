@@ -1,6 +1,10 @@
-Camera2D
-Sprite2D
+PinJoint2D
 CollisionShape2D
+RigidBody2D
+Sprite2D
+Line2D
+DampedSpringJoint2D
+Camera2D
 CharacterBody2D
 Node2D
 TileMapLayer

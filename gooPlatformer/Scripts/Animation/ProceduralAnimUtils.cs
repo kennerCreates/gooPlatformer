@@ -6,16 +6,12 @@ namespace gooPlatformer.Scripts.Animation;
 
 public class ProceduralAnimUtils
 {
-    public static RigidBody CreateBody(ProceduralAnimOptions options) => new()
-    {
-
-    };
-    public static RigidBody CreateSegment(ProceduralAnimOptions options) => new()
+    
+    public static RigidBody CreateRigidBodySegment(ProceduralAnimOptions options) => new()
     {
         CollisionCircle = CreateCollisionCircle(options),
         Sprite = CreateSprite(options)
     };
-    
     
     public static Sprite CreateSprite(ProceduralAnimOptions options) => new()
     {

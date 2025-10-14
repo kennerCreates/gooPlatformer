@@ -2,6 +2,7 @@
 using gooPlatformer.Configuration;
 using gooPlatformer.GodotInterface.Models;
 using gooPlatformer.Scripts.Animation;
+using Node2D = Godot.Node2D;
 
 namespace gooPlatformer.Tests.Scripts.Animation;
 
@@ -91,7 +92,7 @@ public class ProceduralAnimationTests
             Sprite = sprite
         };
         
-        var actual = ProceduralAnimUtils.CreateSegment(options);
+        var actual = ProceduralAnimUtils.CreateRigidBodySegment(options);
         
         Assert.Equivalent(expected, actual);
     }

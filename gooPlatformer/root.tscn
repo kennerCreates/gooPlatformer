@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://r1cbpcemjc45"]
+[gd_scene load_steps=9 format=4 uid="uid://r1cbpcemjc45"]
 
 [ext_resource type="Script" uid="uid://be8dr0qtc56a4" path="res://Scripts/Player/Player.cs" id="1_qw60f"]
 [ext_resource type="Script" uid="uid://doeagjylijfvi" path="res://Scripts/Animation/ProceduralAnimation.cs" id="3_28aoi"]
@@ -117,6 +117,8 @@ sources/1 = SubResource("TileSetAtlasSource_eji0w")
 radius = 9.0
 height = 18.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_28aoi"]
+
 [node name="root" type="Node2D"]
 
 [node name="TileMapLayer2 - Background" type="TileMapLayer" parent="."]
@@ -142,6 +144,69 @@ position_smoothing_enabled = true
 
 [node name="ProceduralAnimation" type="Node2D" parent="Player"]
 script = ExtResource("3_28aoi")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Player/ProceduralAnimation"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/ProceduralAnimation/RigidBody2D"]
+shape = SubResource("CircleShape2D_28aoi")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Player/ProceduralAnimation/RigidBody2D"]
+node_a = NodePath("../../..")
+node_b = NodePath("..")
+softness = 0.2
+angular_limit_lower = -0.5235988
+angular_limit_upper = 0.5235988
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Player/ProceduralAnimation/RigidBody2D"]
+position = Vector2(-20, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D"]
+shape = SubResource("CircleShape2D_28aoi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D"]
+texture = ExtResource("4_jnlp7")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D"]
+position = Vector2(20, 0)
+node_a = NodePath("../..")
+node_b = NodePath("..")
+softness = 0.2
+angular_limit_lower = -0.5235988
+angular_limit_upper = 0.5235988
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D"]
+position = Vector2(-20, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D"]
+shape = SubResource("CircleShape2D_28aoi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D"]
+texture = ExtResource("4_jnlp7")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D"]
+position = Vector2(20, 0)
+node_a = NodePath("../..")
+node_b = NodePath("..")
+softness = 0.2
+angular_limit_lower = -0.5235988
+angular_limit_upper = 0.5235988
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D"]
+position = Vector2(-20, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D/RigidBody2D"]
+shape = SubResource("CircleShape2D_28aoi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D/RigidBody2D"]
+texture = ExtResource("4_jnlp7")
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Player/ProceduralAnimation/RigidBody2D/RigidBody2D/RigidBody2D/RigidBody2D"]
+position = Vector2(20, 0)
+node_a = NodePath("../..")
+node_b = NodePath("..")
+softness = 0.2
+angular_limit_lower = -0.5235988
+angular_limit_upper = 0.5235988
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
 texture = ExtResource("4_jnlp7")

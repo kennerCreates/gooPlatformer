@@ -9,8 +9,9 @@ public partial class Player : CharacterBody2D
 	{
 		MouseInput = GetGlobalMousePosition(),
 		PlayerLocation = GetGlobalPosition(),
-		Speed = 300.0f,
-		Acceleration = 500.0f,
+		Speed = 150.0f,
+		Acceleration = 50.0f,
+		RotationSpeed = 25f
 	};
 
 	public override void _PhysicsProcess(double delta)
@@ -23,6 +24,7 @@ public partial class Player : CharacterBody2D
 	{
 		Velocity = MovementInputUtils.VelocityForTick(Velocity, dt, InputOptions);
 		LookAt(InputOptions.MouseInput);
+		//Rotation = MovementInputUtils.InterpolatedLookAtLocation(InputOptions, dt);
 		MoveAndSlide();
 	}
 }

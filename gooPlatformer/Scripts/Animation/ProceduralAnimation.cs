@@ -3,6 +3,7 @@ using Godot;
 using gooPlatformer.Configuration;
 using gooPlatformer.GodotInterface;
 using gooPlatformer.GodotInterface.Models;
+using Node2D = Godot.Node2D;
 
 namespace gooPlatformer.Scripts.Animation;
 
