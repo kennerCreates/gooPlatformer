@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=4 uid="uid://r1cbpcemjc45"]
 
-[ext_resource type="Script" uid="uid://be8dr0qtc56a4" path="res://gooPlatformer/Scripts/Player/Player.cs" id="1_qw60f"]
-[ext_resource type="Script" uid="uid://doeagjylijfvi" path="res://gooPlatformer/Scripts/ProceduralAnimation.cs" id="3_28aoi"]
+[ext_resource type="Script" uid="uid://be8dr0qtc56a4" path="res://Scripts/Player/Player.cs" id="1_qw60f"]
+[ext_resource type="Script" uid="uid://doeagjylijfvi" path="res://Scripts/Animation/ProceduralAnimation.cs" id="3_28aoi"]
 [ext_resource type="Texture2D" uid="uid://dh5d74cdcqtb7" path="res://Assets/Sprites/circle.png" id="4_jnlp7"]
 [ext_resource type="Texture2D" uid="uid://csu426ntiuea0" path="res://Assets/TileSets/tileset.png" id="12_qw60f"]
 
@@ -143,5 +143,5 @@ position_smoothing_enabled = true
 [node name="ProceduralAnimation" type="Node2D" parent="Player"]
 script = ExtResource("3_28aoi")
 
-[node name="Sprite2D" type="Sprite2D" parent="Player/ProceduralAnimation"]
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
 texture = ExtResource("4_jnlp7")

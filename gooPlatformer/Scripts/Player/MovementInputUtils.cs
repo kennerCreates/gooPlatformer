@@ -3,7 +3,7 @@ using Vector2 = Godot.Vector2;
 
 namespace gooPlatformer.Scripts.Player;
 
-public class MovementInputUtils
+public static class MovementInputUtils
 {
     public static Vector2 VelocityForTick(Vector2 velocity, float dt, MovementInputOptions options) =>
         velocity.MoveToward(TargetVelocity(options), options.Acceleration * dt);
