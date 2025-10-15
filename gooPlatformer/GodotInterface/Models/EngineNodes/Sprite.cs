@@ -1,6 +1,4 @@
-﻿using Godot;
-
-namespace gooPlatformer.GodotInterface.Models;
+﻿namespace gooPlatformer.GodotInterface.Models.EngineNodes;
 
 public class Sprite
 {

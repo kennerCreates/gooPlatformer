@@ -5,12 +5,12 @@ namespace gooPlatformer.Scripts.Player;
 
 public partial class Player : CharacterBody2D
 {
+	[Export] public float Speed { get; set; } = 150f;
+	[Export] public float Acceleration { get; set; } = 50f;
 	private MovementInputOptions InputOptions => new()
 	{
 		MouseInput = GetGlobalMousePosition(),
 		PlayerLocation = GetGlobalPosition(),
-		Speed = 150.0f,
-		Acceleration = 50.0f,
 		RotationSpeed = 25f
 	};
 

@@ -2,3 +2,8 @@ res://Scripts/Animation/ProceduralAnimation.cs
 res://Scripts/Player/Player.cs
 res://root.tscn
 res://Scripts/Animation/Joint.cs
+res://GodotInterface/Models/CustomNodes/Joint.cs
+res://GodotInterface/Models/CustomNodes/JointGodot.cs
+res://GodotInterface/Models/CustomNodes/Creature.cs
+res://Scripts/Animation/CreatureBody.cs
+res://Scripts/Animation/FollowJoint.cs

@@ -1,6 +1,7 @@
 ﻿using Godot;
 using gooPlatformer.Configuration;
 using gooPlatformer.GodotInterface.Models;
+using gooPlatformer.GodotInterface.Models.EngineNodes;
 using gooPlatformer.Scripts.Animation;
 using Node2D = Godot.Node2D;
 

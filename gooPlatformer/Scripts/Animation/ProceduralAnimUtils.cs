@@ -1,6 +1,5 @@
-﻿using Godot;
-using gooPlatformer.Configuration;
-using gooPlatformer.GodotInterface.Models;
+﻿using gooPlatformer.Configuration;
+using gooPlatformer.GodotInterface.Models.EngineNodes;
 
 namespace gooPlatformer.Scripts.Animation;
 

@@ -1,5 +1,6 @@
 ﻿using Godot;
 using gooPlatformer.GodotInterface.Models;
+using gooPlatformer.GodotInterface.Models.EngineNodes;
 using Node = Godot.Node;
 using Node2D = Godot.Node2D;
 
