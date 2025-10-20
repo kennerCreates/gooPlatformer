@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=4 uid="uid://r1cbpcemjc45"]
+[gd_scene load_steps=9 format=4 uid="uid://r1cbpcemjc45"]
 
 [ext_resource type="Script" uid="uid://be8dr0qtc56a4" path="res://Scripts/Player/Player.cs" id="1_qw60f"]
+[ext_resource type="Script" uid="uid://btmw7kbe8mfgi" path="res://Scripts/Animation/FollowJoint/FollowJointScript.cs" id="4_28aoi"]
 [ext_resource type="Texture2D" uid="uid://dh5d74cdcqtb7" path="res://Assets/Sprites/circle.png" id="4_jnlp7"]
 [ext_resource type="Texture2D" uid="uid://csu426ntiuea0" path="res://Assets/TileSets/tileset.png" id="12_qw60f"]
 
@@ -116,6 +117,8 @@ sources/1 = SubResource("TileSetAtlasSource_eji0w")
 radius = 9.0
 height = 18.0
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_28aoi"]
+
 [node name="root" type="Node2D"]
 
 [node name="TileMapLayer2 - Background" type="TileMapLayer" parent="."]
@@ -140,4 +143,17 @@ offset = Vector2(50, -50)
 position_smoothing_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Player"]
+texture = ExtResource("4_jnlp7")
+
+[node name="FollowJointScript" type="Area2D" parent="Player" node_paths=PackedStringArray("TargetNode")]
+position = Vector2(-25, 0)
+script = ExtResource("4_28aoi")
+TargetNode = NodePath("..")
+FollowSpeed = 50.0
+metadata/_custom_type_script = "uid://btmw7kbe8mfgi"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/FollowJointScript"]
+shape = SubResource("CircleShape2D_28aoi")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/FollowJointScript"]
 texture = ExtResource("4_jnlp7")

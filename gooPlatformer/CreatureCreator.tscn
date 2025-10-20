@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqgxkoddiw6k5"]
+
+[ext_resource type="Script" uid="uid://8t05bh5cn3qg" path="res://Scripts/Animation/CreatureCreator.cs" id="1_8emo0"]
+[ext_resource type="Script" uid="uid://btmw7kbe8mfgi" path="res://Scripts/Animation/FollowJoint.cs" id="2_yeby8"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_8emo0")
+NumberOfSegments = 8
+
+[node name="Segment 9" type="Node2D" parent="."]
+script = ExtResource("2_yeby8")
+
+[node name="Segment 10" type="Node2D" parent="."]
+script = ExtResource("2_yeby8")
+
+[node name="Segment 11" type="Node2D" parent="."]
+script = ExtResource("2_yeby8")
+
+[node name="Segment 12" type="Node2D" parent="."]
+script = ExtResource("2_yeby8")
+
+[node name="Segment 14" type="Node2D" parent="."]
+script = ExtResource("2_yeby8")
+
+[node name="Segment 15" type="Node2D" parent="."]
+script = ExtResource("2_yeby8")
+
+[node name="Segment 16" type="Node2D" parent="."]
+script = ExtResource("2_yeby8")
+
+[node name="Segment 17" type="Node2D" parent="."]
+script = ExtResource("2_yeby8")
+
+[node name="Segment 18" type="Node2D" parent="."]
+script = ExtResource("2_yeby8")

@@ -8,5 +8,4 @@ public class MovementInputOptions
     public Vector2 PlayerLocation { get; init; }
     public float Speed { get; init; }
     public float Acceleration { get; init; }
-    public float RotationSpeed { get; init; }
 }

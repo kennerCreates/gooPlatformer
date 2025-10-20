@@ -11,7 +11,8 @@ public partial class Player : CharacterBody2D
 	{
 		MouseInput = GetGlobalMousePosition(),
 		PlayerLocation = GetGlobalPosition(),
-		RotationSpeed = 25f
+		Speed = Speed,
+		Acceleration = Acceleration
 	};
 
 	public override void _PhysicsProcess(double delta)
