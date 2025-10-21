@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1760982540
+::res://::1761078561
 CreatureCreator.tscn::PackedScene::3523243537307868606::1760549154::0::1::::<><><>0<>0<><>::uid://8t05bh5cn3qg::::res://Scripts/Animation/CreatureCreator.cs<>uid://btmw7kbe8mfgi::::res://Scripts/Animation/FollowJoint.cs
 icon.svg::CompressedTexture2D::5903033827306023662::1760386676::1760386676::1::::<><><>0<>0<>73d629ac1ad21f38c6f27872818ecfd0<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 root.tscn::PackedScene::1247008174369538312::1760565782::0::1::::<><><>0<>0<><>::uid://be8dr0qtc56a4::::res://Scripts/Player/Player.cs<>uid://btmw7kbe8mfgi::::res://Scripts/Animation/FollowJoint/FollowJointScript.cs<>uid://dh5d74cdcqtb7::::res://Assets/Sprites/circle.png<>uid://csu426ntiuea0::::res://Assets/TileSets/tileset.png
@@ -12,16 +12,6 @@ tileset.png::CompressedTexture2D::6079338766358706537::1760386676::1760386676::1
 FollowJointOptions.cs::CSharpScript::6344938595390263762::1760565529::0::1::::<><><>0<>0<><>::
 MovementInputOptions.cs::CSharpScript::8939795624581713448::1760492182::0::1::::<><><>0<>0<><>::
 ProceduralAnimOptions.cs::CSharpScript::7200388389307688477::1760462040::0::1::::<><><>0<>0<><>::
-::res://GodotInterface/::1760485851
-GodotUtils.cs::CSharpScript::6250996870782513821::1760485851::0::1::::<><><>0<>0<><>::
-::res://GodotInterface/Models/::1760484715
-::res://GodotInterface/Models/CustomNodes/::1760488442
-::res://GodotInterface/Models/EngineNodes/::1760485871
-Circle.cs::CSharpScript::8099850479812647446::1760485871::0::1::::<><><>0<>0<><>::
-CollisionCircle.cs::CSharpScript::7567097770976537634::1760485871::0::1::::<><><>0<>0<><>::
-Node.cs::CSharpScript::8640416261860396285::1760485871::0::1::::<><><>0<>0<><>::
-RigidBody.cs::CSharpScript::3714033600818964534::1760485871::0::1::::<><><>0<>0<><>::
-Sprite.cs::CSharpScript::3613546773040260925::1760485871::0::1::::<><><>0<>0<><>::
 ::res://Scripts/::1760386978
 ::res://Scripts/Animation/::1760562529
 CreatureCreator.cs::CSharpScript::2357026580721773214::1760562529::0::1::::<>Node2D<><>0<>1<><>::

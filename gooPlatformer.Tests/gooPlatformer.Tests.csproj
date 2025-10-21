@@ -22,4 +22,8 @@
       <ProjectReference Include="..\gooPlatformer\gooPlatformer.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Scripts\Animation\" />
+    </ItemGroup>
+
 </Project>
