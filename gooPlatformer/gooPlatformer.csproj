@@ -5,7 +5,6 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="GodotInterface\Models\CustomNodes\" />
     <Folder Include="Scripts\Animation\" />
   </ItemGroup>
 </Project>
